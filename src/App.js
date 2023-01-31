@@ -1,27 +1,12 @@
-import logo from './logo.svg';
-import Nav from './components/nav/nav';
 import './App.css';
+import NavBar from './components/nav/nav';
 
 function App() {
   return (
-    <div className="App">
-      
-      <header className="App-header">
-      <Nav />
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Nuestro MVP esta online!!.
-        </p>
-        <a
-          className="App-link"
-          href="Disruptia"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Disruptia          
-        </a>              
-      </header>    
-      
+    <div className="App"> 
+    < NavBar /> 
+    <h1>App component</h1>  
+          
     </div>
     
   );
