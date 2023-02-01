@@ -1,6 +1,15 @@
 .App {
   text-align: center;
 }
+.gtp-column{
+  background-color: #61dafb;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+}
 
 .App-logo {
   height: 40vmin;
