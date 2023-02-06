@@ -23,8 +23,10 @@ function App() {
           <Col className='gtp-column'>
             <div className = 'text-box'>
             <h5>Chat GPT te ayuda a crear tu hoja de vida</h5> {/* Texto debajo de Introducción.*/}
-            <p>Intrucciones de lo que debe hacer el disrupter</p>
-            <p>TLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>¡Te damos la bienvenida a Disruptia!</p>
+            <p>Como primer ejercicio, te invitamos a que, antes de continuar, pon tu mente lo más abierta posible... e intentes observar todo lo que encontrarás en este espacio de aprendizaje con una inmensa curiosidad. Ya que interactuarás con ambientes tecnológicos que, al igual que tú, están aprendiendo.<br></br>
+Igualmente, si puedes, no sólo te quedes con lo que verás en estas interacciones, pues lo que te contaremos es sólo un abrebocas de lo que el tiempo presente y futuro tiene por ofrecerte. ¡Pues este es tu primer paso para trabajar y ser la mejor versión en tu trabajo!
+<br></br>Vamos adelante!</p>
             </div>
           </Col>
           <Col>

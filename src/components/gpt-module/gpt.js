@@ -22,12 +22,40 @@ function GptModule() {
                       <input placeholder="Experiencia..." oninput="this.className = ''" name="fname"/></p>                    
                 </div>
                 <div className="tab">
-                  <h6>Escrribe donde has estudiado</h6>
+                  <h6>Escribe donde has estudiado</h6>
                     <p>
                       <input placeholder="Donde has estudiado..." oninput="this.className = ''" name="fname"/></p>                    
                 </div>
                 <div className="tab">
-                  <h6>Escribe unas referencias personales</h6>
+                  <h6>Escribe tus referencias personales</h6>
+                    <p>
+                      <input placeholder="referencias..." oninput="this.className = ''" name="fname"/></p>                    
+                </div>
+
+                <div className="tab">
+                  <h6>Escribe tus referencias personales</h6>
+                    <p>
+                      <input placeholder="referencias..." oninput="this.className = ''" name="fname"/></p>                    
+                </div>
+
+                <div className="tab">
+                  <h6>Escribe tus referencias personales</h6>
+                    <p>
+                      <input placeholder="referencias..." oninput="this.className = ''" name="fname"/></p>                    
+                </div>
+
+                <div className="tab">
+                  <h6>Escribe tus referencias personales</h6>
+                    <p>
+                      <input placeholder="referencias..." oninput="this.className = ''" name="fname"/></p>                    
+                </div>
+                <div className="tab">
+                  <h6>Escribe tus referencias personales</h6>
+                    <p>
+                      <input placeholder="referencias..." oninput="this.className = ''" name="fname"/></p>                    
+                </div>
+                <div className="tab">
+                  <h6>Escribe tus referencias personales</h6>
                     <p>
                       <input placeholder="referencias..." oninput="this.className = ''" name="fname"/></p>                    
                 </div>
