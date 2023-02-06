@@ -1,19 +1,19 @@
+@import './assets/fonts.css';
+
+*:not(i):not(.anticon) {
+  font-family: 'Alexandria-Regular';
+  /* font-size: 14px; */
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Alexandria-SemiBold' !important;
+}
+
 .App {
   text-align: center;
 }
-.gtp-column{
-  background-color: #61dafb;
-}
-
-.square {
-  height: 50px;
-  width: 50px;
-  background-color: #555;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-a{  
+  height: auto;  
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,26 +22,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-box{
+  margin-top: 6rem;
+  margin-right: 2rem;
 }

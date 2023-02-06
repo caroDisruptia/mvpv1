@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Alexandria-Regular";
+    src: url("./fonts/Alexandria-Regular.ttf");
+  }
+
+@font-face {
+    font-family: "Alexandria-SemiBold";
+    src: url("./fonts/Alexandria-SemiBold.ttf");
+  }
+
+@font-face {
+    font-family: "Alexandria-Bold";
+    src: url("./fonts/Alexandria-Bold.ttf");
+  }
