@@ -34,30 +34,7 @@ function GptModule() {
                   <h6>Escribe tus referencias personales</h6>
                     <p>
                       <input placeholder="referencias..." oninput="this.className = ''" name="fname"/></p>                    
-                </div>
-
-                <div className="tab">
-                  <h6>Escribe tus referencias personales</h6>
-                    <p>
-                      <input placeholder="referencias..." oninput="this.className = ''" name="fname"/></p>                    
-                </div>
-
-                <div className="tab">
-                  <h6>Escribe tus referencias personales</h6>
-                    <p>
-                      <input placeholder="referencias..." oninput="this.className = ''" name="fname"/></p>                    
-                </div>
-                <div className="tab">
-                  <h6>Escribe tus referencias personales</h6>
-                    <p>
-                      <input placeholder="referencias..." oninput="this.className = ''" name="fname"/></p>                    
-                </div>
-                <div className="tab">
-                  <h6>Escribe tus referencias personales</h6>
-                    <p>
-                      <input placeholder="referencias..." oninput="this.className = ''" name="fname"/></p>                    
-                </div>
-                
+                </div>                
                 </form>
                 </Card>
 
