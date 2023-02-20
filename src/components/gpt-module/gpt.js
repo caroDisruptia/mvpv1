@@ -10,33 +10,43 @@ function GptModule() {
             <form id="regForm">
                 <h1 id="register">Hoja de vida</h1>
                 <div className="tab">
-                  <h6>Escribe una Introducción...</h6>
+                  <h6>Escribe tu nombre</h6>
                     <p>
-                      <input  placeholder="Introducción" oninput="this.className = ''" name="fname"/></p>                    
+                      <input  placeholder="Nombre..." oninput="this.className = ''" name="fname"/></p>                    
                 </div>
                 <div className="tab">
-                  <h6>Escribe tu Experiencia laboral</h6>
+                  <h6>Escribe tu teléfono</h6>
                     <p>
                       <input placeholder="Experiencia..." oninput="this.className = ''" name="fname"/></p>                    
                 </div>
                 <div className="tab">
+                  <h6>Escribe tu email</h6>
+                    <p>
+                      <input placeholder="Email..." oninput="this.className = ''" name="fname"/></p>                    
+                </div>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <div className="tab">
+                  <h6>Escribe Perfil laboral</h6>
+                    <p>
+                      <input placeholder="Tu perfil aqui..." oninput="this.className = ''" name="fname"/></p>                    
+                </div>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+
+                <div className="tab">
+                  <h6>Escribe donde has trabajado</h6>
+                    <p>
+                      <input placeholder="Donde has trabajado..." oninput="this.className = ''" name="fname"/></p>                    
+                </div>  
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <div className="tab">
                   <h6>Escribe donde has estudiado</h6>
                     <p>
                       <input placeholder="Donde has estudiado..." oninput="this.className = ''" name="fname"/></p>                    
-                </div>
-                <div className="tab">
-                  <h6>Escribe tus referencias personales</h6>
-                    <p>
-                      <input placeholder="referencias..." oninput="this.className = ''" name="fname"/></p>                    
-                </div>
-
-                <div className="tab">
-                  <h6>Escribe tus referencias personales</h6>
-                    <p>
-                      <input placeholder="referencias..." oninput="this.className = ''" name="fname"/></p>                    
-                </div>                
+                </div>  
+                             
                 </form>
                 </Card>
+                <button type="button" class="btn btn-secondary">Secondary</button>
 
         </div>
 
