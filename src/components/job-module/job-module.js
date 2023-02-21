@@ -25,9 +25,9 @@ function JobModule() {
   return (
     <Container className="container-a" >
       <div className="text-box">
-        <h5>Chat GPT te ayuda a crear tu hoja de vida</h5>{" "}
-        {/* Texto debajo de Introducción.*/}
-        <p>¡Te damos la bienvenida a Disruptia!</p>
+        <h5>La Inteligencia Artificial de Disruptia te enseña a crear tu hoja de vida</h5>
+        {/* Texto debajo de Introducción.*/}   
+       
         <div>
       <form onSubmit={handleSubmit}>
         <input
