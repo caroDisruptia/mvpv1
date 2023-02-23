@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import axios from "axios";
 
-const baseUrL = "https://gpt-int.onrender.com/chat";
+//const baseUrL = "https://gpt-int.onrender.com/chat";
+const baseUrL = "http://localhost:8080/chat";
 
 function JobModule() {
   const [prompt, setPrompt] = useState("");

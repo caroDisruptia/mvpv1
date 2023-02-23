@@ -5,7 +5,8 @@ import './gpt.css';
 import axios from "axios";
 
 function GptModule() {
-  const baseUrL = "https://gpt-int.onrender.com";
+  //const baseUrL = "https://gpt-int.onrender.com/chat";
+  const baseUrL = "http://localhost:8080/chat";
   const [prompt, setPrompt] = useState("");
   const [response, setResponse] = useState("");
 
@@ -21,6 +22,7 @@ function GptModule() {
       .catch((err) => {
         console.error(err);
       });
+      console.log(baseUrL);
       console.log("fin del metodo"); 
   }
      return (
@@ -76,7 +78,8 @@ function GptModule() {
             }}
           >
             Enviar
-          </button>
+          </button> 
+          <p>{response}</p>
           <div className="tab">
             <h6 className="border-title">Escribe Perfil laboral</h6>
             <p>
