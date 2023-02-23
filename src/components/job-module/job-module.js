@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import axios from "axios";
 
-const baseUrL = "http://localhost:8080/chat";
+const baseUrL = "https://gpt-int.onrender.com/chat";
 
 function JobModule() {
   const [prompt, setPrompt] = useState("");
@@ -26,9 +26,10 @@ function JobModule() {
     <Container className="container-a" >
       <div className="text-box">
         <h5>La Inteligencia Artificial de Disruptia te enseña a crear tu hoja de vida</h5>
-        {/* Texto debajo de Introducción.*/}   
+       
        
         <div>
+           {/* 
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -36,7 +37,7 @@ function JobModule() {
           onChange={(e) => setPrompt(e.target.value)}
         />
         <button type="submit">Submit</button>
-      </form>
+  </form>*/}
       <p>{response}</p>
     </div>
       </div>

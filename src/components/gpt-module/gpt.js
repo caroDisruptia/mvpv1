@@ -1,10 +1,29 @@
-
+import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card } from 'react-bootstrap';
 import './gpt.css';
+import axios from "axios";
 
 function GptModule() {
-    return (
+  const baseUrL = "https://gpt-int.onrender.com/chat";
+  const [prompt, setPrompt] = useState("");
+  const [response, setResponse] = useState("");
+
+  let quest = "";
+  function pulsar(quest){
+        const prompt = quest;
+    axios
+      .post(baseUrL, { prompt })
+      .then((res) => {
+        // Update the response state with the server's response
+        setResponse(res.data);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+      console.log("fin del metodo"); 
+  }
+     return (
         <div className='section my-3'>
             <Card className="shadow">              
             <form id="regForm">
@@ -24,14 +43,21 @@ function GptModule() {
                     <p>
                       <input placeholder="Email..." oninput="this.className = ''" name="fname"/></p>                    
                 </div>
-                <button type="button" class="btn btn-secondary">Enviar</button>
+                <button type="button" class="btn btn-secondary" onClick={() => {
+                  const quest = "Como escribir mi perfil en mi hoja de vida";
+                  pulsar(quest);                  
+                  }}>Enviar</button>
+                <p>{response}</p>
                 <div className="tab">
                   <h6>Escribe Perfil laboral</h6>
                     <p>
                       <input placeholder="Tu perfil aqui..." oninput="this.className = ''" name="fname"/></p>                    
                 </div>
-                <button type="button" class="btn btn-secondary">Secondary</button>
-
+                <button type="button" class="btn btn-secondary" onClick={() => {
+                  const quest = "Como escribir mi experiencia laboral en mi hoja de vida";
+                  pulsar(quest);                  
+                  }}>Enviar</button>
+                   
                 <div className="tab">
                   <h6>Escribe donde has trabajado</h6>
                     <p>
