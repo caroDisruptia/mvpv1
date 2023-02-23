@@ -26,3 +26,15 @@ h1, h2, h3, h4, h5 {
   margin-top: 6rem;
   margin-right: 2rem;
 }
+
+.btn {
+  border-radius: 10px !important;
+  padding: 9px 24px !important;
+  font-weight: 600;
+  transition: all 300ms;
+}
+
+.btn-primary {
+ background-color: #7D05ED !important;
+ border: 1px solid #7D05ED !important;
+}

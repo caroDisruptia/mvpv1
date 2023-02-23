@@ -122,3 +122,13 @@ button:focus{
 .thanks-message {
     display: none
 }
+
+
+.input-border {
+    border: none !important;
+  }
+  
+  .border-title {
+    border-bottom: 1px solid rgb(31, 30, 30);
+  }
+  
