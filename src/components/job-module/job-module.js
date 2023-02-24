@@ -1,36 +1,18 @@
-import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
-import axios from "axios";
+import Spinner from "react-bootstrap/Spinner";
 
-//const baseUrL = "https://gpt-int.onrender.com/chat";
-const baseUrL = "http://localhost:8080/chat";
-
-function JobModule() {
-  const [prompt, setPrompt] = useState("");
-  const [response, setResponse] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    axios
-      .post(baseUrL, { prompt })
-      .then((res) => {
-        // Update the response state with the server's response
-        setResponse(res.data);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  };
-
+function JobModule({ response, loading }) {
+  console.log(loading);
   return (
-    <Container className="container-a" >
+    <Container className="container-a">
       <div className="text-box">
-        <h5>La Inteligencia Artificial de Disruptia te enseña a crear tu hoja de vida</h5>
-       
-       
+        <h5>
+          La Inteligencia Artificial de Disruptia te enseña a crear tu hoja de
+          vida
+        </h5>
+
         <div>
-           {/* 
+          {/* 
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -39,8 +21,16 @@ function JobModule() {
         />
         <button type="submit">Submit</button>
   </form>*/}
-      <p>{response}</p>
-    </div>
+          {loading && (
+            <div className="text-center mt-5">
+              <Spinner animation="border" role="status">
+                <span className="visually-hidden">Loading...</span>
+              </Spinner>
+            </div>
+          )}
+
+          <p style={{ textAlign: "justify" }}>{response}</p>
+        </div>
       </div>
     </Container>
   );
