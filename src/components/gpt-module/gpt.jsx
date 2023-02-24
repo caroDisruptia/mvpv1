@@ -1,30 +1,9 @@
-import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card } from 'react-bootstrap';
 import './gpt.css';
-import axios from "axios";
 
-function GptModule() {
-  //const baseUrL = "https://gpt-int.onrender.com/chat";
-  const baseUrL = "http://localhost:8080/chat";
-  const [prompt, setPrompt] = useState("");
-  const [response, setResponse] = useState("");
-
-  let quest = "";
-  function pulsar(quest){
-        const prompt = quest;
-    axios
-      .post(baseUrL, { prompt })
-      .then((res) => {
-        // Update the response state with the server's response
-        setResponse(res.data);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-      console.log(baseUrL);
-      console.log("fin del metodo"); 
-  }
+function GptModule({ pulsar, loading }) {
+  
      return (
       <div className="section my-3">
       <Card className="shadow">
@@ -49,7 +28,7 @@ function GptModule() {
               <input
                 autoComplete="off"
                 className="input-border"
-                placeholder="Experiencia..."
+                placeholder="Teléfono..."
                 oninput="this.className = ''"
                 name="fname"
               />
@@ -72,6 +51,7 @@ function GptModule() {
           <button
             type="button"
             class="btn btn-primary mb-3"
+            disabled={loading}
             onClick={() => {
               const quest = "Como escribir mi perfil en mi hoja de vida";
               pulsar(quest);
@@ -79,7 +59,6 @@ function GptModule() {
           >
             Enviar
           </button> 
-          <p>{response}</p>
           <div className="tab">
             <h6 className="border-title">Escribe Perfil laboral</h6>
             <p>
@@ -95,6 +74,7 @@ function GptModule() {
           <button
             type="button"
             class="btn btn-primary mb-3"
+            disabled={loading}
             onClick={() => {
               const quest =
                 "Como escribir mi experiencia laboral en mi hoja de vida";
