@@ -76,7 +76,7 @@ function GptModule({ pulsar, loading }) {
             class="btn btn-primary mb-3"
             disabled={loading}
             onClick={() => {
-              const quest = " Mi nombre es 'Jane Doe' Dame instrucciones de cómo hacer la parte de mi experiencia en mi hoja de vida de manera concisa. Empieza la instrucción siendo amigable con la primera palabra de mi nombre, no me saludes de nuevo. Esta instrucción dámela en 70 palabras";
+              const quest = "Dame instrucciones de cómo hacer la parte de mi experiencia en mi hoja de vida de manera concisa. Empieza la instrucción 'Disrupter ten en cuenta', no me saludes de nuevo. Esta instrucción dámela en 70 palabras";
               
               pulsar(quest);
             }}

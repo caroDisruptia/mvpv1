@@ -11,16 +11,7 @@ function JobModule({ response, loading }) {
           vida
         </h5>
 
-        <div>
-          {/* 
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={prompt}
-          onChange={(e) => setPrompt(e.target.value)}
-        />
-        <button type="submit">Submit</button>
-  </form>*/}
+        <div>          
           {loading && (
             <div className="text-center mt-5">
               <Spinner animation="border" role="status">
