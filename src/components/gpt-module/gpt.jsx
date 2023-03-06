@@ -53,7 +53,7 @@ function GptModule({ pulsar, loading }) {
             class="btn btn-primary mb-3"
             disabled={loading}
             onClick={() => {
-              const quest = "Como escribir mi perfil en mi hoja de vida";
+              const quest = "Dame instrucciones de cómo hacer la parte de mi experiencia en mi hoja de vida de manera concisa. Empieza la instrucción diciéndome: 'Disrupter, ahora, teniendo en cuenta que ya hiciste tu perfil'. Esta instrucción dámela en 70 palabras.";
               pulsar(quest);
             }}
           >
@@ -76,8 +76,8 @@ function GptModule({ pulsar, loading }) {
             class="btn btn-primary mb-3"
             disabled={loading}
             onClick={() => {
-              const quest =
-                "Como escribir mi experiencia laboral en mi hoja de vida";
+              const quest = " Mi nombre es 'Jane Doe' Dame instrucciones de cómo hacer la parte de mi experiencia en mi hoja de vida de manera concisa. Empieza la instrucción siendo amigable con la primera palabra de mi nombre, no me saludes de nuevo. Esta instrucción dámela en 70 palabras";
+              
               pulsar(quest);
             }}
           >
