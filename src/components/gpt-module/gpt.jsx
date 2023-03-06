@@ -53,7 +53,7 @@ function GptModule({ pulsar, loading }) {
             class="btn btn-primary mb-3"
             disabled={loading}
             onClick={() => {
-              const quest = "Dame instrucciones de cómo hacer la parte de mi experiencia en mi hoja de vida de manera concisa. Empieza la instrucción diciéndome: 'Disrupter, ahora, teniendo en cuenta que ya hiciste tu perfil'. Esta instrucción dámela en 70 palabras.";
+              const quest = "Dame instrucciones de cómo hacer mi perfil de hoja de vida de manera concreta. Esta instrucción dámela en 70 palabras. Empieza la instrucción saludándome con el nombre de 'Disrupter' ";
               pulsar(quest);
             }}
           >
@@ -76,14 +76,12 @@ function GptModule({ pulsar, loading }) {
             class="btn btn-primary mb-3"
             disabled={loading}
             onClick={() => {
-              const quest = "Dame instrucciones de cómo hacer la parte de mi experiencia en mi hoja de vida de manera concisa. Empieza la instrucción 'Disrupter ten en cuenta', no me saludes de nuevo. Esta instrucción dámela en 70 palabras";
-              
+              const quest = "Dame instrucciones de cómo hacer la parte de mi experiencia en mi hoja de vida de manera concisa. Empieza la instrucción: 'Disrupter ten en cuenta', no me saludes de nuevo. Esta instrucción dámela en 70 palabras";
               pulsar(quest);
             }}
           >
-            Secondary
+           Enviar
           </button>
-
           <div className="tab">
             <h6 className="border-title">Escribe donde has trabajado</h6>
             <p>
@@ -96,8 +94,16 @@ function GptModule({ pulsar, loading }) {
               />
             </p>
           </div>
-          <button type="button" class="btn btn-primary mb-3">
-            Secondary
+          <button 
+          type="button" 
+          class="btn btn-primary mb-3" 
+          disabled={loading}
+          onClick={() => {
+            const quest = "Dame instrucciones de cómo hacer la parte de mi formación y estudios académicos de manera concisa. Empieza la instrucción diciéndome: 'Disrupter, ya tienes tu perfil y tu experiencia trabajando'. Esta instrucción dámela máximo en 70 palabras.";
+            pulsar(quest);
+          }}         
+          >
+            Enviar
           </button>
           <div className="tab">
             <h6 className="border-title">Escribe donde has estudiado</h6>
