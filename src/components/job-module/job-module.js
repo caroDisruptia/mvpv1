@@ -19,7 +19,6 @@ function JobModule({ response, loading }) {
               </Spinner>
             </div>
           )}
-
           <p style={{ textAlign: "justify" }}>{response}</p>
         </div>
       </div>
