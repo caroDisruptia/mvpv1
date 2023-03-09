@@ -1,7 +1,5 @@
 import React from "react";
 import {
-  PDFViewer,
-  PDFDownloadLink,
   Document,
   Page,
   View,
@@ -26,44 +24,31 @@ function MyDocument({ valuesForm }) {
   return (
     <Document>
       <Page size="LETTER" style={styles.page} wrap>
-        <Text
-          id="register"
-          style={{
-            color: "#6A1B9A",
-            fontWeight: "bold",
-            fontSize: "20px",
-            textAlign: "center",
-          }}
-        >
-          Hoja de vida
-        </Text>
+        
         <View >
-          <Text style={styles.borderTitle}>Escribe tu nombre completo</Text>
+          <Text style={styles.borderTitle}>Nombre</Text>
           <Text>{valuesForm?.name || 'Nombre...'}</Text>
         </View>
         <View >
-          <Text style={styles.borderTitle}>Escribe tu teléfono</Text>
+          <Text style={styles.borderTitle}>Teléfono</Text>
           <Text>{valuesForm?.phone || 'Teléfono...'}</Text>
         </View>
         <View >
           <Text style={styles.borderTitle}>
-            Escribe tu correo electrónico (e-mail)
+            Correo electrónico (e-mail)
           </Text>
           <Text>{valuesForm?.email || 'Email...'}</Text>
         </View>
-
         <View >
-          <Text style={styles.borderTitle}>Escribe Perfil laboral</Text>
+          <Text style={styles.borderTitle}>Perfil laboral</Text>
           <Text>{valuesForm?.profile || 'Tu perfil aquí...'}</Text>
         </View>
-
         <View >
-          <Text style={styles.borderTitle}>Escribe donde has trabajado</Text>
+          <Text style={styles.borderTitle}>Experiencia Laboral</Text>
           <Text>{valuesForm?.job || 'Donde has trabajado...'}</Text>
         </View>
-
         <View >
-          <Text style={styles.borderTitle}>Escribe donde has estudiado</Text>
+          <Text style={styles.borderTitle}>Educación</Text>
           <Text>{valuesForm?.studys || 'Donde has estudiado...'}</Text>
         </View>
       </Page>
