@@ -12,9 +12,8 @@ function Home() {
         <div class="row gx-4 gx-lg-5 align-items-center my-5">
             <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://dummyimage.com/900x400/dee2e6/6c757d.jpg" alt="..." /></div>
             <div class="col-lg-5">
-                <h1 class="font-weight-light">Bienvenido a Disruptia</h1>
-                <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
-                <a class="btn btn-primary" href="#!" >Call to Action!</a>
+                <h2 class="font-weight-light">Talento diverso y de impacto para las empresas de America Latina</h2>          
+                
             </div>
         </div>        
         {/* Content Row  */}
@@ -22,28 +21,28 @@ function Home() {
             <div class="col-md-4 mb-5">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h2 class="card-title">Hoja de vida</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                        <h3 class="card-title">Quiero conseguir trabajo</h3>
+                        <p class="card-text">Conoce nuestras rutas de aprendizaje para formarte de forma ágil y acceder a oportunidades laborales de las vancantes mas demandadas actualmente.</p>
                     </div>
-                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">Soy talento</a></div>
                 </div>
             </div>
             <div class="col-md-4 mb-5">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h2 class="card-title">Empresas</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+                        <h3 class="card-title">Quiero conseguir talento</h3>
+                        <p class="card-text">Con ayuda de inteligencia artificial identifica, crea, publica y encuentra talento de impacto para las vacantes que tienes en tu empresa y encuentra el talento adecuado.</p>
                     </div>
-                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">Busco talento</a></div>
                 </div>
             </div>
             <div class="col-md-4 mb-5">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h2 class="card-title">otra cosa</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                        <h3 class="card-title">Mi hoja de vida con AI</h3>
+                        <p class="card-text">Con ayuda de la inteligencia artificial aprende y crea tu hoja de vida de manera más sencilla. Quedará lista y será visible para para las mejores oportunidades de trabajo para ti</p>
                     </div>
-                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">Hacer mi Hdv</a></div>
                 </div>
             </div>
         </div>
