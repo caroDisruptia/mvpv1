@@ -6,6 +6,7 @@ import GptModule from "../gpt-module/gpt"; //"./components/gpt-module/gpt"
 import Footer from '../footer/footer';
 import { useState } from "react";
 import axios from "axios";
+import TabHdv from "./TabHdv";
 
 function Hdv() {
   const baseUrL = "https://gpt-int.onrender.com/chat";
@@ -35,7 +36,8 @@ function Hdv() {
               <JobModule response={response} loading={loading} />
             </div>
             <div className="col-12 col-md-6">
-              <GptModule response={response} pulsar={handleSubmit} loading={loading} />
+              {/* <GptModule  /> */}
+              <TabHdv pulsar={handleSubmit} loading={loading} />
             </div>
           </div>
         </div>

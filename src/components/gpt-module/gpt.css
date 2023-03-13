@@ -41,13 +41,23 @@ input {
   outline: none;
 }
 
+textarea:focus{
+    border:1px solid #6a1b9a !important;
+    outline: none;
+}
+
 input.invalid {
  
     border:1px solid #e03a0666;
 }
 
-.tab {
-   
+.nav-tabs {
+    --bs-nav-tabs-border-color: none !important;
+    --bs-nav-tabs-link-active-border-color: none !important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-color: none !important;
+    color: transparent;
 }
 
 button {
