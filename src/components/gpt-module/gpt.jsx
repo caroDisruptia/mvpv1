@@ -77,7 +77,7 @@ function GptModule({ pulsar, loading, activeKey, setActiveKey }) {
                 setActiveKey('2');
               }}
             >
-              Enviar
+              Empezar
             </button>
           </>
         )}
@@ -104,12 +104,12 @@ function GptModule({ pulsar, loading, activeKey, setActiveKey }) {
               disabled={loading}
               onClick={async() => {
                 const quest =
-                  "Dame instrucciones de cómo hacer la parte de mi experiencia en mi hoja de vida de manera concisa. Empieza la instrucción: 'Disrupter ten en cuenta', no me saludes de nuevo. Esta instrucción dámela en 70 palabras";
+                  "Dame instrucciones de cómo hacer la parte de mi experiencia en mi hoja de vida de manera concisa. Empieza con la instrucción: 'Disrupter ten en cuenta', no me saludes de nuevo. Esta instrucción dámela en 70 palabras";
                 await pulsar(quest);
                 setActiveKey('3');
               }}
             >
-              Enviar
+              Siguiente
             </button>
           </>
         )}
@@ -141,7 +141,7 @@ function GptModule({ pulsar, loading, activeKey, setActiveKey }) {
                 setActiveKey('4');
               }}
             >
-              Enviar
+              Siguiente
             </button>
           </>
         )}
@@ -149,7 +149,7 @@ function GptModule({ pulsar, loading, activeKey, setActiveKey }) {
         {activeKey === "4" && (
           <>
             <div className="tab">
-              <h6 className="border-title">Escribe donde has estudiado</h6>
+              <h6 className="border-title">Escribe dónde has estudiado</h6>
               <p>
                 <textarea
                   defaultValue={valuesForm.studys}
@@ -173,7 +173,7 @@ function GptModule({ pulsar, loading, activeKey, setActiveKey }) {
                 setActiveKey('5');
               }}
             >
-              Enviar
+              Siguiente
             </button>
           </>
         )}
