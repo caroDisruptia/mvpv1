@@ -81,7 +81,7 @@ const TabHdv = ({ pulsar, loading }) => {
             </Nav.Item>
           </Nav>
           <h1 id="register">Hoja de vida</h1>
-          <GptModule activeKey={activeKey} pulsar={pulsar} loading={loading} />
+          <GptModule activeKey={activeKey} setActiveKey={setActiveKey} pulsar={pulsar} loading={loading} />
         </Card>
       </div>
     </>

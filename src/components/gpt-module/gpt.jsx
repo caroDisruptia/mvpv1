@@ -5,7 +5,7 @@ import "./gpt.css";
 import { PDFDownloadLink, PDFViewer } from "@react-pdf/renderer";
 import MyDocument from "./PDFGenerator";
 
-function GptModule({ pulsar, loading, activeKey }) {
+function GptModule({ pulsar, loading, activeKey, setActiveKey }) {
   const [valuesForm, setValuesForm] = useState({
     name: "",
     phone: "",
@@ -70,10 +70,11 @@ function GptModule({ pulsar, loading, activeKey }) {
               type="button"
               className="btn btn-primary mb-3"
               disabled={loading}
-              onClick={() => {
+              onClick={async() => {
                 const quest =
                   "Dame instrucciones de cómo hacer mi perfil de hoja de vida de manera concreta. Esta instrucción dámela en 70 palabras. Empieza la instrucción saludándome con el nombre de 'Disrupter' ";
-                pulsar(quest);
+                await pulsar(quest);
+                setActiveKey('2');
               }}
             >
               Enviar
@@ -101,10 +102,11 @@ function GptModule({ pulsar, loading, activeKey }) {
               type="button"
               className="btn btn-primary mb-3"
               disabled={loading}
-              onClick={() => {
+              onClick={async() => {
                 const quest =
                   "Dame instrucciones de cómo hacer la parte de mi experiencia en mi hoja de vida de manera concisa. Empieza la instrucción: 'Disrupter ten en cuenta', no me saludes de nuevo. Esta instrucción dámela en 70 palabras";
-                pulsar(quest);
+                await pulsar(quest);
+                setActiveKey('3');
               }}
             >
               Enviar
@@ -132,10 +134,11 @@ function GptModule({ pulsar, loading, activeKey }) {
               type="button"
               class="btn btn-primary mb-3"
               disabled={loading}
-              onClick={() => {
+              onClick={async () => {
                 const quest =
                   "Dame instrucciones de cómo hacer la parte de mi formación y estudios académicos de manera concisa. Empieza la instrucción diciéndome: 'Disrupter, ya tienes tu perfil y tu experiencia trabajando'. Esta instrucción dámela máximo en 70 palabras.";
-                pulsar(quest);
+                await pulsar(quest);
+                setActiveKey('4');
               }}
             >
               Enviar
@@ -144,25 +147,44 @@ function GptModule({ pulsar, loading, activeKey }) {
         )}
 
         {activeKey === "4" && (
-          <div className="tab">
-            <h6 className="border-title">Escribe donde has estudiado</h6>
-            <p>
-              <textarea
-                defaultValue={valuesForm.studys}
-                autoComplete="off"
-                className="input-border form-control"
-                placeholder="Donde has estudiado..."
-                name="studys"
-                onChange={on_change}
-                style={{ minHeight: "200px" }}
-              />
-            </p>
-          </div>
+          <>
+            <div className="tab">
+              <h6 className="border-title">Escribe donde has estudiado</h6>
+              <p>
+                <textarea
+                  defaultValue={valuesForm.studys}
+                  autoComplete="off"
+                  className="input-border form-control"
+                  placeholder="Donde has estudiado..."
+                  name="studys"
+                  onChange={on_change}
+                  style={{ minHeight: "200px" }}
+                />
+              </p>
+            </div>
+            <button
+              type="button"
+              className="btn btn-primary mb-3"
+              disabled={loading}
+              onClick={async () => {
+                const quest =
+                  "Dame instrucciones de cómo hacer mi perfil de hoja de vida de manera concreta. Esta instrucción dámela en 70 palabras. Empieza la instrucción saludándome con el nombre de 'Disrupter' ";
+                await pulsar(quest);
+                setActiveKey('5');
+              }}
+            >
+              Enviar
+            </button>
+          </>
         )}
       </form>
       {activeKey === "5" && (
         <>
-          <PDFViewer className="w-100" style={{ height: 600 }} showToolbar={false}>
+          <PDFViewer
+            className="w-100"
+            style={{ height: 600 }}
+            showToolbar={false}
+          >
             <MyDocument valuesForm={valuesForm} />
           </PDFViewer>
           <div className="d-flex justify-content-center">

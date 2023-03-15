@@ -1,4 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import NavBar from "../nav/nav";
+import Footer from "../footer/footer";
 
 function Home() {
   return (
