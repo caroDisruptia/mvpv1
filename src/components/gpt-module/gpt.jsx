@@ -104,7 +104,7 @@ function GptModule({ pulsar, loading, activeKey, setActiveKey }) {
               disabled={loading}
               onClick={async() => {
                 const quest =
-                  "Dame instrucciones de cómo hacer la parte de mi experiencia en mi hoja de vida de manera concisa. Empieza con la instrucción: 'Disrupter ten en cuenta', no me saludes de nuevo. Esta instrucción dámela en 70 palabras";
+                  "Dame instrucciones de cómo hacer la parte de mi experiencia en mi hoja de vida de manera concisa. Empieza con la instrucción 'Disrupter ten en cuenta', no me saludes de nuevo. Esta instrucción dámela en 70 palabras";
                 await pulsar(quest);
                 setActiveKey('3');
               }}
@@ -134,10 +134,7 @@ function GptModule({ pulsar, loading, activeKey, setActiveKey }) {
               type="button"
               class="btn btn-primary mb-3"
               disabled={loading}
-              onClick={async () => {
-                const quest =
-                  "Dame instrucciones de cómo hacer la parte de mi formación y estudios académicos de manera concisa. Empieza la instrucción diciéndome: 'Disrupter, ya tienes tu perfil y tu experiencia trabajando'. Esta instrucción dámela máximo en 70 palabras.";
-                await pulsar(quest);
+              onClick={async () => {//to add a function to  implement the resume review by openAI
                 setActiveKey('4');
               }}
             >
@@ -167,9 +164,6 @@ function GptModule({ pulsar, loading, activeKey, setActiveKey }) {
               className="btn btn-primary mb-3"
               disabled={loading}
               onClick={async () => {
-                const quest =
-                  "Dame instrucciones de cómo hacer mi perfil de hoja de vida de manera concreta. Esta instrucción dámela en 70 palabras. Empieza la instrucción saludándome con el nombre de 'Disrupter' ";
-                await pulsar(quest);
                 setActiveKey('5');
               }}
             >

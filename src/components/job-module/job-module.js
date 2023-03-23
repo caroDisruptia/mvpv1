@@ -7,11 +7,11 @@ function JobModule({ response, loading }) {
     <Container className="container-a">
       <div className="text-box">
         <h5>
-          La Inteligencia Artificial de Disruptia te enseña a crear tu hoja de
-          vida
+          La Inteligencia Artificial de Disruptia te acompaña a crear tu hoja de
+          vida...
         </h5>
 
-        <div>          
+        <div>
           {loading && (
             <div className="text-center mt-5">
               <Spinner animation="border" role="status">
