@@ -1,0 +1,24 @@
+.img-banner {
+    background-image: url(../../assets/img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    height: 250px;
+}
+
+.information-banner {
+    text-align: right;
+}
+
+.text-banner {
+  color: #7D05ED;
+}
+
+.text-banner span {
+  color: #F2A73B;
+  font-weight: 700;
+}
+
+.card-banner {
+    max-width: 400px;
+}
