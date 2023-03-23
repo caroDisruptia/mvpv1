@@ -17,6 +17,9 @@ function JobModule({ response, loading }) {
               <Spinner animation="border" role="status">
                 <span className="visually-hidden">Loading...</span>
               </Spinner>
+              <div>
+                Estamos construyendo una recomendación personalizada para ti
+              </div>
             </div>
           )}
           <p style={{ textAlign: "justify" }}>{response}</p>
