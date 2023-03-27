@@ -117,7 +117,7 @@ function GptModule({ pulsar, loading, activeKey, setActiveKey }) {
         {activeKey === "3" && (
           <>
             <div className="tab">
-              <h6 className="border-title">Escribe donde has trabajado</h6>
+              <h6 className="border-title">Escribe dónde has trabajado</h6>
               <p>
                 <textarea
                   defaultValue={valuesForm.job}
